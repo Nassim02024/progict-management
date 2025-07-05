@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static' , filename='login.css')}}">
+  <link rel="stylesheet" href="{{url_for('static' , filename='responsev.css')}}">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>singup</title>
+</head>
+<body>
+  <div class="conteniaer">
+    <div class="box">
+       <div class="right">
+         <div class="titlelogin">
+           <h1>SingUp</h1>
+         </div>
+         <div class="inputs">
+          <form class="formlogin" action="/signup" method='POST'>
+            <input class="username" type="email" name="email" required>
+            <label for="username">email</label>
+            <i class='bx bxs-user'></i>
+
+            <input class="password" type="password" name="password" required>
+            <label for="password">password</label>
+            <i class='bx bxs-lock-alt'></i>
+
+            <button type="submit">signup</button>
+
+            <p class="create">I have account <span><a href="{{url_for('login')}}">Login</a></span></p>
+          </form>
+         </div>
+       </div>
+       <div class="left">
+         <div class="welcom"><h1>Welcom</h1></div>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptatum?</p>
+       </div>
+       <div class="dive">
+        <span class="span"></span>
+      </div> 
+    </div> 
+  </div>
+</body>
+</html> 

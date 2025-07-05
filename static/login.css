@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif , 'Times New Roman', Times, serif;
+}
+
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg , rgba(8, 45, 80, 0.587) , rgba(80, 6, 83, 0.61));
+}
+.conteniaer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 100%;
+  color: white;
+  
+}
+.conteniaer .box{
+  position: relative;
+  display: flex;
+  height: 80vh;
+  width: 60%;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  padding: 10rem 0;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0 0 25px  rgb(8, 45, 80)  ;
+  overflow: hidden;
+  
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80vh;
+  width: 70%;
+}
+.formlogin{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+}
+.formlogin input{
+outline: none;
+border: none;
+border-bottom: 2px solid white;
+background-color: transparent;
+width: 75%;
+/* position: relative; */
+}
+
+.inputs i{
+  position: relative;
+  right:   -100px;
+  top: -50px;
+}
+.inputs button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 75%;
+  border-radius: 30px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid  white;
+  cursor: pointer;
+  padding: 1rem 0;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+
+}
+.inputs button:hover{
+transform: scale(.9);
+
+}
+.inputs button::before{
+content: "";
+position: absolute;
+top: 0px;
+right: 0;
+width: 100%;
+height: 300%;
+background: linear-gradient(rgba(186, 173, 214, 0.986),rgb(0, 0, 0) , rgba(181, 202, 232, 0.932));
+transition: .5s;
+z-index: -1;
+}
+.inputs button:hover:before{
+top: -5px;
+}
+.inputs form button p{
+color: whitesmoke;
+font-size: 1.2rem;
+font-weight: 500;
+
+}
+.inputs label{
+  position: relative;
+  left:  -100px;
+  top: -30px; 
+  transition: 1s;
+}
+
+
+.inputs input:focus+label{
+  top: -50px;
+  color: rgb(3, 70, 92);
+}
+
+
+
+.inputs .create{
+  color: rgb(218, 218, 218);
+  font-size: .8rem;
+  position: relative;
+  top: 2rem;
+}
+.inputs .create span{
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+  margin: .2rem;
+}
+.left .welcom{
+  font-weight: 700;
+  font-size: 2rem;
+}
+.left .welcom{
+  font-weight: 700;
+  font-size: 2rem;
+}
+.left p{
+color: rgb(249, 246, 246);
+text-align: inherit;
+margin: 1.5rem 3rem;
+width: 250px;
+}
+
+.dive .span{
+  position: absolute;
+  top: 0%;
+  left:60%;
+  width: 900px;
+  height: 750px;
+  background-color: rgb(2, 78, 53);
+  transform: rotate(10deg) skew(35deg);
+  border: 1px solid rgb(21, 1, 53);
+  z-index: -1;
+}

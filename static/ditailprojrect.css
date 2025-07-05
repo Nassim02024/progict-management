@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+}
+body{
+  width: 100%;
+}
+a{
+  background: unset;
+  color: #131313;
+}
+.contenerdit{
+   font-family: SF Pro;
+  width: 100%;
+  justify-content: space-between;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  top: 20vh; 
+
+}
+.siadbar{
+  width: 20%; 
+  height: 100vh;  
+  border-right: 1px rgba(0, 0, 0, 0.60) solid; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  display:flex;
+  flex-direction: column;
+  font-size: 1rem;
+  position: fixed;
+  top: 20vh;
+  left: 0;
+  margin: 0 1rem;
+}
+.mianslade{
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+  justify-content: space-around;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 76%;
+  position: relative;
+  bottom:  25vh;
+  margin-left: 22%;
+}
+
+.right .boxs{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 5rem;
+}
+
+
+.poin{
+  width: 0px;
+  font-size: 50px;
+  height: 7.33px;
+  position: relative;
+  right: 40px;
+  top: -40.67px;
+  background: #131313;
+}
+.span{
+  display: grid;
+      place-items: center;
+      width: 56px;
+      background-color: #131313;
+      border-radius: 51%;
+      color: white;
+      padding: -0.7rem 0.7rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      
+}
+.str {
+  width: 1rem;
+}
+.allTasks{
+  margin-top: 35vh;
+}
+.tasks{
+  width: 100%;
+
+  /* height: fit-content; */
+  /* bottom: -40vh; */
+  
+}
+.all{
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+}
+.tasks .all .one{
+  width: 90%;
+  display: flex;
+  background: #F9FAF7; 
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25); 
+  border-radius: 40px; 
+  justify-content: space-between; 
+  align-items: center;
+  padding: 1rem 1rem;
+  
+}

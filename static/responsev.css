@@ -1,0 +1,22 @@
+@media  (max-width: 1024px){
+
+  .bigconttener{
+    background-color: aquamarine;
+    display: none;
+  }
+  .center{
+    display: block;
+  }
+}
+.center{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(9 70 70);
+  color: white;
+  font-size: 2rem;
+  gap: 2px;
+}

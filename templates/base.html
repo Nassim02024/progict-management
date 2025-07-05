@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static' , filename='home.css')}}">
+  <link rel="stylesheet" href="{{url_for('static' , filename='ditailprojrect.css')}}">
+  <link rel="stylesheet" href="{{url_for('static' , filename='dachbord.css')}}">
+  <link rel="stylesheet" href="{{url_for('static' , filename='responsev.css')}}">
+  <title>Progect-mengment</title>
+</head>
+<body class="basebody">
+
+  <div class="bigContener">
+    {% include "navbar.html" %}
+    {% block content %}
+    
+    {% endblock content %}
+    {% include "footer.html" %}
+  </div>
+
+
+  <script src="{{url_for('static' , filename ='dachbord.js')}}"></script>
+
+  
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static' , filename='navbar.css')}}">
+  <link rel="stylesheet" href="{{url_for('static' , filename='responsev.css')}}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=notifications_active" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Lilita+One&family=Markazi+Text:wght@400..700&family=Parkinsans:wght@300..800&family=Seymour+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <title>navbar</title>
+</head>
+<body>
+    <form class="formproject" action="/setproject" method="post">
+
+  <div class="addcontener" style="position: fixed; border: 2px solid black; width: 501px; padding: 32px; background: #F9FAF7; border-radius: 28px; flex-direction: column; justify-content: center; align-items: flex-end; gap: 33px; ">
+    <div style="align-self: center; height: 427px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex; ">
+      <h2 style="text-align: center;position: relative;top: 0.5rem; left: 50%;transform: translate(-50% , -50%);  font-family: SF Pro;">Add new Project</h2>
+      <div style="align-self: stretch; height: 39px; padding-left: 10px; padding-right: 10px; padding-top: 4px; padding-bottom: 4px; background: white; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); border-radius: 10px; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+        <input type="text" name="projectname" class="projectname"  style="width: 40%;border: none;outline: none; position: absolute;" placeholder="Project name" required>
+        <!-- <label for="projectname" style="color: rgba(0, 0, 0, 0.30); font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word;position: relative;left: 0.5rem; top: 0;transition: 1s;">Project name</label> -->
+      </div>
+      <div style="align-self: stretch; height: 115px; padding-left: 10px; padding-right: 10px; padding-top: 12px; padding-bottom: 12px; background: white; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); border-radius: 21px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+        <input type="text" name="descrpction" class="descrpction" style="height: 100% ;width: 100%; color: rgba(0, 0, 0); font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word" placeholder="Descrpction" required>
+        <!-- <label for="descrpction" style="color: rgba(0, 0, 0, 0.30); font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word;position: relative;left: 0.5rem; top: 0;transition: 1s;">Descrpction</label> -->
+      </div>
+      
+      <div style="align-self: stretch; height: 39px; padding-left: 10px; padding-right: 10px; padding-top: 4px; padding-bottom: 4px; background: white; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); border-radius: 10px; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+        <input type="text" name="projectteam" class="projectteam" style=" width: 100%; color: rgba(0, 0, 0); font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word ; " placeholder="project team" required>
+      </div>
+      <div style="align-self: stretch; height: 39px; padding-left: 10px; padding-right: 10px; padding-top: 4px; padding-bottom: 4px; background: white; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); border-radius: 10px; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+        <input type="date" name="Startdate" class="Startdate" style="width: 100%; color: rgba(0, 0, 0); font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word" placeholder="Start date" required>
+      </div>
+      <div style="align-self: stretch; height: 39px; padding-left: 10px; padding-right: 10px; padding-top: 4px; padding-bottom: 4px; background: white; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); border-radius: 10px; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+        <input type="date" name="Delevrydate" class="Delevrydate" style="width: 100%; color: rgba(0, 0, 0); font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word" placeholder="Delevry date" required>
+      </div>
+      <div style="align-self: stretch; height: 39px; padding-left: 10px; padding-right: 10px; padding-top: 4px; padding-bottom: 4px; background: white; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); border-radius: 10px; justify-content: space-between; align-items: center; display: inline-flex">
+        <input type="number" name="Budget" class="Budget" style="width: 100%; color: rgba(0, 0, 0); font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word" placeholder="Budget" required>
+        <div style="color: #131313; font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word">$</div>
+      </div>
+    
+    </div>
+    <div class="fonts.gstatic.com" style="display: flex; gap: 0.5rem;">
+    <div class="cansle" style="cursor: pointer; width: 98px; padding-left: 10px; padding-right: 10px; padding-top: 4px; padding-bottom: 4px; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); border-radius: 21px; outline: 1px #131313 solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+      <div  style=" color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word">Cancle</div>
+    </div>
+     <a href="{{url_for('doneadd')}}"> <div class="addprobutton" style="cursor: pointer; width: 98px; padding-left: 10px; padding-right: 10px; padding-top: 4px; padding-bottom: 4px; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); border-radius: 21px; outline: 1px #131313 solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 10px; ; overflow: hidden;display: inline-flex;">
+      <button style="padding: 4px 31px; outline: none;border: none;" type="submit"><div class="chareadd" style=" color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word ;padding: 4px 31px;">ADD</div></button>
+    </div></a> 
+  </div>
+
+  </div>
+</form>
+  
+  <div class="contener">
+    <div class="logo">TASKY</div>
+    <div style="justify-content: flex-start; align-items: center;     gap: 17px;
+    position: relative;
+    left: 55px; display: flex">
+      <div style="width: 71px; height: 24px; position: relative">
+        <div style="left: 0px; top: 0px; position: absolute; font-size: 20px; font-family: SF Pro; font-weight: 400; line-height: 24px; word-wrap: break-word"> <a href="{{url_for('home')}}">Home</a></div>
+      </div>
+      <div style="width: 100px; height: 24px; position: relative">
+        <div style="left: 0px; top: 0px; position: absolute; color: rgba(19.47, 18.60, 18.60, 0.60); font-size: 20px; font-family: SF Pro; font-weight: 400; line-height: 24px; word-wrap: break-word"> <a href="{{url_for('dachbored')}}">Dashbords</a></div>
+      </div>
+      <div class="creteButton">
+        <p>Create a project</p> <span>+</span>
+      </div>
+      <div style="width: 100px; height: 24px; position: relative">
+        <div style="left: 0px; top: 0px; position: absolute; color: rgba(19.47, 18.60, 18.60, 0.60); font-size: 20px; font-family: SF Pro; font-weight: 400; line-height: 24px; word-wrap: break-word"> <a href="{{url_for('blog')}}">Blog</a></div>
+      </div>
+    </div>
+    <div style="width: 572px; justify-content: flex-start; align-items: center; gap: 24px; display: flex;  width: 554px;justify-content: flex-start;
+    align-items: center;
+    gap: 28px;
+    display: flex;position: relative;right: 25px;">
+      <form class="formsearch">
+        <input type="search" name="search" class="search" placeholder="Enter Project" >
+        <label for="search" class="lable"><button class="searchbuttonnav" type="submit">Search</button></label>
+      </form>
+      <div style="width: 44px; height: 44px; overflow: hidden; border-radius: 33px; outline: 1px black solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 10px; display: flex ; cursor: pointer;">
+        <span class="material-symbols-outlined">
+          notifications_active
+        </span>
+      </div>
+      <img style="width: 3rem; height: 3rem; position: relative; background: #141212; border-radius: 50%" src="{{url_for('static' , filename='images/avatar.jpg')}}" />
+    </div>
+    
+
+
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static' , filename='login.css')}}">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="{{url_for('static' , filename ='login.css')}}">
+  <link rel="stylesheet" href="{{url_for('static' , filename ='responsev.css')}}">
+  <title>login</title>
+</head>
+<body>
+  <div class="conteniaer">
+    <div class="box">
+       <div class="right">
+         <div class="titlelogin">
+           <h1>Login</h1>
+         </div>
+         <div class="inputs">
+          <form class="formlogin" action="/login" method="post">
+            <input class="username" type="email" name="email">
+            <label for="username">email</label>
+            <i class='bx bxs-user'></i>
+
+            <input class="password" type="password" name="password">
+            <label for="password">password</label>
+            <i class='bx bxs-lock-alt'></i>
+
+            <button type="submit"><p>Login</p></button>
+
+            <a href="{{url_for('signup')}}"><p class="create">Dont have account <span>sign up</span></p></a>
+          </form>
+         </div>
+       </div>
+       <div class="left">
+         <div class="welcom"><h1>Welcom Back!</h1></div>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptatum?</p>
+       </div>
+       <div class="dive">
+        <span class="span"></span>
+      </div> 
+    </div> 
+  </div>
+</body>
+</html>

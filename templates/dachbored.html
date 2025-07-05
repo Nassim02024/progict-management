@@ -1,0 +1,190 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="contenerdit"><!-- contenerdit -->
+  <div class="siadbar"><!-- siadbar -->
+    <div class="mianslade" >
+      <div class="titleside" style=" margin: 0.5rem 0; align-items: center; display: inline-flex"><!-- titleside -->
+      <h3 >Projects</h3>
+      </div><!-- end titleside -->
+      <div  class="creaited" style=" max-height: 55vh; position: relative; align-items: flex-start; margin-top: 27px;display: flex;flex-direction: column;  gap: 16px;overflow-y: scroll;">
+        
+            
+        {% for getingprojecto in listpros %}
+        
+          <a href="{{url_for('dachbored' , project_id= getingprojecto.project_id )}}">  
+            <div class="oneproject" style=" justify-content: space-around; align-items: center; gap: 115px;  width:15rem;">
+               <div class="nameproj" style="display: flex;">
+                <img class="str" src="  {{url_for('static' , filename='images/cticon.png')}}">
+               <div ><p class="nameoneproject">{{getingprojecto.projectname}}</p></div>  
+               <div ><p class="descrpctionproject" style="display: none;">{{getingprojecto.descrpction}}</p></div>  
+               <div ><p class="teamproject" style="display: none;">{{getingprojecto.projectteam}}</p></div>  
+               <div ><p class="Startdateproject" style="display: none;">{{getingprojecto.Startdate}}</p></div>  
+               <div ><p class="Delevrydateproject" style="display: none;">{{getingprojecto.Delevrydate}}</p></div>  
+               <div ><p class="Budgetproject" style="display: none;">{{getingprojecto.Budget}}</p></div>  
+              
+              </div>
+            </a>
+              <div class="diti">
+               <img src="{{url_for('static' , filename='images/moreicon.png')}}" alt="">
+               <div class="blackdidi"><p>Ditils</p></div>
+              </div>
+              
+            </div>
+        
+          {% endfor %}
+            
+    
+    </div><!-- end creaited -->
+    </div>
+    <div style="margin-bottom: 9rem;" >Settings</div>
+  </div><!--end siadbar -->
+
+
+
+    <!-- Detils -->
+     
+    <div class="ditilproject">
+      <h1><DEtails></DEtails></h1>
+      <div style="align-self: stretch; height: 427px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+        <div style="align-self: stretch; height: 39px; padding-left: 10px; padding-right: 10px; padding-top: 4px; padding-bottom: 4px; background: white; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); border-radius: 10px; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+          <p  style="color: #9c9c9c;">name:</p><div class="nameditil" style="color: rgba(0, 0, 0); font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word">  </div>
+        </div>
+        <div style="align-self: stretch; height: 115px; padding-left: 10px; padding-right: 10px; padding-top: 12px; padding-bottom: 12px; background: white; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); border-radius: 21px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+          <p style="color: #9c9c9c;">Descrpction:</p><div class="descditil" style="color: rgba(0, 0, 0); font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word"> </div>
+        </div>
+        <div style="align-self: stretch; height: 39px; padding-left: 10px; padding-right: 10px; padding-top: 4px; padding-bottom: 4px; background: white; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); border-radius: 10px; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+          <p style="color: #9c9c9c;">team:</p><div class="teamditil" style="color: rgba(0, 0, 0); font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word"> </div>
+        </div>
+        <div style="align-self: stretch; height: 39px; padding-left: 10px; padding-right: 10px; padding-top: 4px; padding-bottom: 4px; background: white; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); border-radius: 10px; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+          <p style="color: #9c9c9c;">Startdate:</p><div class="startditil" style="color: rgba(0, 0, 0); font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word"> </div>
+        </div>
+        <div style="align-self: stretch; height: 39px; padding-left: 10px; padding-right: 10px; padding-top: 4px; padding-bottom: 4px; background: white; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); border-radius: 10px; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+          <p style="color: #9c9c9c;">Delevrydate:</p><div class="deleveryditil" style="color: rgba(0, 0, 0); font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word"> </div>
+        </div>
+        <div style="align-self: stretch; height: 39px; padding-left: 10px; padding-right: 10px; padding-top: 4px; padding-bottom: 4px; background: white; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); border-radius: 10px; justify-content: space-between; align-items: center; display: inline-flex">
+          <p style="color: #9c9c9c;">Bedget:</p><div class="Budgetditil" style="color: rgba(0, 0, 0); font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word"> </div>
+          <div style="color: #131313; font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word">$</div>
+        </div>
+      </div>
+      <div class="closedditil" style="width: 98px; padding-left: 10px; padding-right: 10px; padding-top: 4px; padding-bottom: 4px; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); border-radius: 21px; outline: 1px #131313 solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 10px; display: inline-flex; cursor: pointer;">
+        <div  style="color: rgba(0, 0, 0); font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word">Closes</div>
+      </div>
+    </div>
+    <!--// Detils -->    
+
+
+
+  <div class="right"><!-- right -->
+    <div class="boxs"><!--boxs -->
+      <div class="box"><!-- one box -->
+        <div style="width: 300px;height: 28vh; padding: 12px; background: #F9FAF7; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); border-radius: 24px; outline: 1px rgba(0, 0, 0, 0.60) solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex">
+            <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+              <div style="align-self: stretch; justify-content: space-between; align-items: center; display: inline-flex">
+                <div style="color: black; font-size: 25px; font-family: SF Pro; font-weight: 400; line-height: 30px; word-wrap: break-word">TASKS</div>
+                <div class="poin">...</div>
+              </div>
+              <div class="numbertasks" style="color: black; font-size: 39px; font-family: SF Pro; font-weight: 400; line-height: 46.80px; word-wrap: break-word">0</div>
+            </div>
+            <div style="justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+              <div class="addtasksbutton" style="position: relative; bottom: 10px;left: 2px;color: black; font-size: 20px; font-family: SF Pro; font-weight: 400; line-height: 24px; word-wrap: break-word ; display: flex;cursor: pointer;"><span class="span">+</span><h4>Add</h4> </div>
+            </div>
+        </div>
+      </div><!-- end one box -->
+        <div class="box">
+          <div style="width: 300px;height: 28vh; padding: 12px; background: #F9FAF7; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); border-radius: 24px; outline: 1px rgba(0, 0, 0, 0.60) solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex">
+            <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+              <div style="align-self: stretch; justify-content: space-between; align-items: center; display: inline-flex">
+                <div style="color: black; font-size: 25px; font-family: SF Pro; font-weight: 400; line-height: 30px; word-wrap: break-word">IN PROGRESS</div>
+                <div class="poin">...</div>
+              </div>
+              <div style="color: black; font-size: 39px; font-family: SF Pro; font-weight: 400; line-height: 46.80px; word-wrap: break-word">2</div>
+            </div>
+            <div style="justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div style="width: 300px;height: 28vh; padding: 12px; background: #F9FAF7; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); border-radius: 24px; outline: 1px rgba(0, 0, 0, 0.60) solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex">
+            <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+              <div style="align-self: stretch; justify-content: space-between; align-items: center; display: inline-flex">
+                <div style="color: black; font-size: 25px; font-family: SF Pro; font-weight: 400; line-height: 30px; word-wrap: break-word">DONE</div>
+                <div class="poin">...</div>
+              </div>
+              <div style="color: black; font-size: 39px; font-family: SF Pro; font-weight: 400; line-height: 46.80px; word-wrap: break-word">1</div>
+            </div>
+            <div style="justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+              
+            </div>
+          </div>
+        </div>
+    </div><!-- end boxs -->
+
+    <div class="selecttitle">Selected Project!</div> 
+   <div class="allTasks">
+    
+    <div class="titletask" style="    position: relative; top: 2vh;    top: 5vh;
+    margin: 28Px"><h1 style="margin-top: 5rem 0;">TASKS</h1></div>
+    {% for task in tasks %}
+    <div class="tasks">
+        <div class="inputs">
+            <div class="oneinput">
+                <p class="ptask">{{ task.nametask }}</p>
+            </div>
+            <div class="contentinp">
+                <div class="inprogdiv">
+                    <div class="DONTCOMPLATE">DON’T COMPLATE</div>
+                </div>
+                <div  class="donediv">
+                    <div  class="donetext">DONE</div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+      <div class="all">
+      
+          
+           
+          
+
+          
+
+
+      </div>
+
+    </div><!-- end TASKS -->
+  </div><!-- end right -->
+
+</div><!--end contenerdit -->
+
+
+
+<div class="lertaddtaska">
+  <div class="h1titask">Add Task</div>
+  {% if listpros %}
+      <form method="post" action="/tasks/{{ project_id }}" style="display: flex; flex-direction: column;">
+          <div class="inputsadd">
+              <input class="put" type="text" name="addtask" placeholder="Add task" required>
+          </div>
+          <div class="addorcancle">
+              <div class="no">
+                  <button class="buttoncanc" type="button">Cancel</button>
+              </div>
+              <div class="buttonadd">
+                  <button style="background: unset;" type="submit">Add</button>
+              </div>
+          </div>
+      </form>
+{% else %}
+  <p>No projects found.</p>
+{% endif %}
+</div>
+
+
+<script src="{{url_for('static' , filename ='dachbord.js')}}"></script>
+{% endblock %}

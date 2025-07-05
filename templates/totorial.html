@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static' , filename='totorial.css')}}">
+  <link rel="stylesheet" href="{{url_for('static' , filename='responsev.css')}}">
+  <title>Document</title>
+</head>
+<body>
+  <center class="center" ><img src="{{url_for('static' , filename='/images/desc.png')}}" alt="">Please open the Link on a Computer </center>
+  <div class="bigconttener" style="width: 100%;display: flex;padding-top: 64px;background: #F9FAF7;overflow: hidden;flex-direction: column;justify-content: flex-start;align-items: center;gap: 7rem;">
+  <div style="justify-content: flex-start; align-items: center; gap: 78px; display: inline-flex">
+    <div style="width: 645px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+      <div style=" align-self: stretch; color: black; font-size: 61px; font-family: SF Pro; font-weight: 400; line-height: 73.20px; word-wrap: break-word">Smart Project Management System for Enhanced Productivity and Coordination</div>
+      <a href="{{url_for('login')}}"><div style="width: 154px; height: 34px; padding: 2rem; background: #FC9631; border-radius: 15px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+        <button style="background: unset;outline: none;border: none; color: black; font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word; cursor: pointer;">START NOW</button>
+      </div></a>
+    </div>
+    <img style="width: 29rem; height: 21rem; position: relative; background: #261D1D; border-radius: 19px" src="{{url_for('static' , filename='/images/photo1.png')}}" />
+  </div>
+  <div style="width: 898px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 32px; display: flex">
+    <div style="width: 509px; text-align: center; color: black; font-size: 39px; font-family: SF Pro; font-weight: 400; line-height: 46.80px; word-wrap: break-word">Track Tasks, Manage Teams, and Achieve Goals Efficiently</div>
+    <img style="align-self: stretch; height: 639px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 15px; outline: 1px black solid" src="{{url_for('static' , filename='/images/photo2.png')}}" />
+  </div>
+  <div style="width: 1240.96px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 32px; display: flex">
+    <div style="align-self: stretch; text-align: center; color: black; font-size: 39px; font-family: SF Pro; font-weight: 400; line-height: 46.80px; word-wrap: break-word">Why choose us?</div>
+    <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+      <div style="width: 509px; color: black; font-size: 31px; font-family: SF Pro; font-weight: 400; line-height: 37.20px; word-wrap: break-word">Integrated Tools for Task Management, Resource Allocation, and Performance Analysis</div>
+      <img style="width: 43rem; height: 434.11px;box-shadow: 0px 5px 2px -2px rgba(0, 0, 0, 0.3);  border-radius: 15px;" src="{{url_for('static' , filename='/images/photo3.png')}}" />
+    </div>
+  </div>
+  <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+    <img src="{{url_for('static' , filename='/images/photo4.png')}}" style="align-self: stretch; height: 650px; position: relative; background: #261D1D; overflow: hidden; ">
+      <!-- <div style="left: 300px; top: 302px; position: absolute; color: #F9FAF7; font-size: 39px; font-family: SF Pro; font-weight: 400; line-height: 46.80px; word-wrap: break-word">Effective Project Planning and Execution</div> -->
+    
+    <div style="align-self: stretch; padding-left: 76px; padding-right: 76px; padding-top: 64px; padding-bottom: 64px; background: #131313; flex-direction: column; justify-content: flex-start; align-items: center; gap: 24px; display: flex">
+      <div style="justify-content: flex-start; align-items: flex-start; gap: 109px; display: inline-flex">
+        <div style="width: 140px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+          <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+            <div style="color: #F9F7F1; font-size: 20px; font-family: SF Pro; font-weight: 400; line-height: 24px; word-wrap: break-word">ABOUT US</div>
+            <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+              <div style="align-self: stretch; color: #F9F7F1; font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word">Our Company</div>
+            </div>
+          </div>
+        </div>
+        <div style="width: 203px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+          <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+            <div style="color: #F9F7F1; font-size: 20px; font-family: SF Pro; font-weight: 400; line-height: 24px; word-wrap: break-word">CONTACT US</div>
+            <div style="align-self: stretch; color: #F9F7F1; font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word">Email: info@tasky.com</div>
+          </div>
+        </div>
+        <div style="width: 167px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+          <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+            <div style="color: #F9F7F1; font-size: 20px; font-family: SF Pro; font-weight: 400; line-height: 24px; word-wrap: break-word">Short link</div>
+            <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+              <div style="width: 134px; color: #F9F7F1; font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word">Terms of Service</div>
+              <div style="align-self: stretch; color: #F9F7F1; font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word">Careers</div>
+              <div style="align-self: stretch; color: #F9F7F1; font-size: 16px; font-family: SF Pro; font-weight: 400; line-height: 19.20px; word-wrap: break-word">Sitemap</div>
+            </div>
+          </div>
+        </div>
+        <div style="width: 139px; justify-content: flex-start; align-items: flex-end; gap: 8px; display: flex; flex-wrap: wrap; align-content: flex-end">
+          <div style="color: #F9F7F1; font-size: 20px; font-family: SF Pro; font-weight: 400; line-height: 24px; word-wrap: break-word">SOCIAL MEDIA</div>
+          <img style="width: 30px; height: 30px; border-radius: 9999px"  src="{{url_for('static' , filename='/images/insta.png')}}" />
+          <img style="width: 30px; height: 30px; border-radius: 9999px"  src="{{url_for('static' , filename='/images/facebook.png')}}" />
+          <img style="width: 30px; height: 30px; border-radius: 9999px"  src="{{url_for('static' , filename='/images/snap.png')}}" />
+        </div>
+      </div>
+      <div style="width: 500px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+        <div style="align-self: stretch; height: 2px; background: #D9D9D9"></div>
+        <div style="align-self: stretch; text-align: center; color: #F9F7F1; font-size: 13px; font-family: SF Pro; font-weight: 400; line-height: 15.60px; word-wrap: break-word">© 2024 TASKY. All rights reserved.</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,272 @@
+
+.deleticon {
+  width: 22px;
+  
+}
+.divdelet p {
+  font-size: 22px;
+}
+.divdelet{
+  position: relative;
+  right: 17px;
+  top: 4px;
+  background-color: #ef3434;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  width: 91px;
+  cursor: pointer;
+  display: none;
+}
+.tooglemore{
+  display: flex;
+}
+
+
+.moreicon {
+  width: 5px;
+}
+.moreicon:hover{
+  cursor: pointer;
+}
+
+
+.all{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+.inputs{
+  margin: 2rem 0;
+  display: flex;
+  justify-content: start;
+  align-items: self-start;
+  text-align: start;
+}
+.selecttitle{
+  left: 55%; 
+  top: 67vh;
+  position: fixed;
+  display: block;
+} 
+.oneinput{
+  width: 90%; 
+  position: absolute; 
+  right: 3rem;
+  padding: 1.2rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+  overflow: visible;
+}
+.titletasks{
+  color: black; 
+  font-size: 20px; 
+  font-family: SF Pro; 
+  font-weight: 400; 
+  line-height: 24px; 
+  word-wrap: break-word;
+  background-color: rgb(57, 90, 120);
+}
+
+.contentinp{
+  justify-content: flex-start; 
+  align-items: center; gap: 8px; 
+  display: flex;
+  position: relative;
+  right: 4rem;
+  left: 20rem;
+  top: 0.5rem;
+}
+.inprogdiv{
+  z-index: 1; 
+  padding-left: 12px; 
+  padding-right: 12px; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  border-radius: 30px; 
+  outline: 1px black solid; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px; 
+  display: flex;
+}
+.DONTCOMPLATE{
+  color: black; 
+  font-size: 16px; 
+  font-family: SF Pro; 
+  font-weight: 400; 
+  line-height: 19.20px; 
+  word-wrap: break-word;
+}
+.donediv{
+  z-index: 1; 
+  padding-left: 12px; 
+  padding-right: 12px; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  border-radius: 29px; 
+  outline: 1px black solid; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px; 
+  display: flex;
+}
+.donetext{
+ color: black; 
+ font-size: 16px; 
+ font-family: SF Pro; 
+ font-weight: 400; 
+ line-height: 19.20px; 
+ word-wrap: break-word;
+}
+
+
+
+
+.h1titask{
+  color: #131313;
+  font-size: 30px;
+  line-height: 36px;
+  word-wrap: break-word;
+  margin-left: .8rem;
+  margin-top: 1rem;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.lertaddtaska{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  height: 34vh;
+  background-color: #e6e7e4;
+  z-index: 90;
+  transform: translate(-50% , -50%);
+  border-radius: 30px;
+  display: none;
+}
+.inputsadd input{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5vh;
+  background-color: unset;
+}
+.addorcancle{
+  position: relative;
+  top: 0.5rem;
+  left: 30rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.buttonadd{
+  font-family: SF Pro;
+    height: 2.5rem;
+    margin: 2rem;
+    padding: .5rem;
+    background: #FC9631;
+    border-radius: 15px;
+    width: 10%;
+    gap: 10px;
+    cursor: pointer;
+  
+}
+
+.buttonadd button{
+  background: unset;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.buttoncanc{
+  font-family: SF Pro;
+    height: 2.5rem;
+    padding: .5rem;
+    background: #000000;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    outline: none;
+    gap: 10px;
+    cursor: pointer;
+}  
+.inputsadd{
+  width: 32rem;
+  position: relative;
+  left: 24rem;
+  transform: translate(-50%, 24px);
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: .2rem;
+    background: rgb(255, 255, 255);
+    border-radius: 23px;
+    outline: 1px rgba(0, 0, 0, 0.50) solid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .4rem;
+    display: flex;
+}
+
+.oneproject{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.diti img{
+  width: 3px;
+  background-color: #ef3434;
+  cursor: pointer;
+  position: absolute;
+  right: 26px;
+}
+
+.blackdidi{
+  padding: 6px;
+  background-color: aqua;
+  border-radius: 4px;
+  margin-right: 13px;
+  top: 14px;
+  position: relative;
+  z-index: 10;
+  display: none;
+}
+
+
+
+
+.ditilproject{
+    width: 501px;
+    padding: 32px;
+    background: #F9FAF7;
+    border-radius: 28px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 33px;
+    display: inline-flex;
+    position: fixed;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+    display: none;
+}
+
+.basebody{
+  position: relative;
+}
+.basebody2::after{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000b8;
+}
+
